@@ -1,9 +1,117 @@
 /* ALLGEMEIN */
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #699D9C;
 }
 
+.bodyDiv {
+    padding: 100px 200px;
+}
+
+.horizontal {
+    display: flex;
+}
+
 /* TYPOGRAFIE */
 h1 {
-    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkText {
+    color: #BFF7F7;
+}
+
+.logoText {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.aufzaehlung {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aufzaehlung li {
+    padding-left: 20px;
+}
+
+/* ABOUT */
+.about {
+    justify-content: space-between;
+}
+
+.aboutContainer {
+    padding-top: 50px;
+    width: 50vw;
+}
+
+.aboutHorizontal {
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.aboutImage {
+    width: 30vw;
+}
+
+/* GALLERY */
+.galleryContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.galleryImage {
+    width: calc((100vw - 500px) / 5);
+}
+
+.galleryItem h2 {
+    text-align: center;
+}
+
+.pics {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.pics img {
+    width: 20vw;
+    margin-top: 2vh;
 }
