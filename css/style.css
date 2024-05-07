@@ -18,6 +18,10 @@ body {
     display: flex;
 }
 
+.justifyBetween {
+    justify-content: space-between;
+}
+
 /* TYPOGRAFIE */
 h1 {
     text-transform: uppercase;
@@ -71,6 +75,22 @@ header {
     padding-left: 20px;
 }
 
+/* INDEX */
+.indexBody {
+    overflow: hidden;
+}
+
+.indexH1 {
+    text-align: center;
+}
+
+.indexImage {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
 /* ABOUT */
 .about {
     justify-content: space-between;
@@ -88,6 +108,12 @@ header {
 
 .aboutImage {
     width: 30vw;
+    margin-top: 50px;
+}
+
+.aboutImageSmall {
+    height: 20vh;
+    margin-right: 20px;
 }
 
 /* GALLERY */
@@ -114,4 +140,52 @@ header {
 .pics img {
     width: 20vw;
     margin-top: 2vh;
+}
+
+/* PROJECTS */
+.h2p {
+    margin: 10px 0;
+}
+
+.h3p {
+    margin-bottom: 10px;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.video {
+    width: 40vw;
+}
+
+
+/* MOBILE */
+@media (max-width:480px) {
+    /* ALLGEMEIN */
+    .bodyDiv {
+        padding: 10px 20px;
+    }
+
+    /* TYPOGRAFIE */
+    h1 {
+        text-align: center;
+        margin: 10px 0 20px;
+    }
+
+    /* GALLERY */
+    .galleryContainer {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .galleryImage {
+        width: 100%;
+    }
+
+    .galleryItem h2 {
+        margin-bottom: 30px;
+    }
 }
