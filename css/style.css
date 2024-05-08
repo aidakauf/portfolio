@@ -75,6 +75,10 @@ header {
     padding-left: 20px;
 }
 
+.mainNavigation {
+    line-height: 24px;
+}
+
 /* INDEX */
 .indexBody {
     overflow: hidden;
@@ -169,10 +173,46 @@ header {
         padding: 10px 20px;
     }
 
+    .horizontal {
+        flex-direction: column;
+    }
+
     /* TYPOGRAFIE */
     h1 {
+        font-size: 50px;
         text-align: center;
         margin: 10px 0 20px;
+    }
+
+    /* INDEX */
+    .indexImage {
+        height: 100%;
+        width: auto;
+    }
+
+    .indexH1 {
+        margin-top: calc((100vh - 150px)/2);
+    }
+
+    /* ABOUT */
+    .aboutHorizontal {
+        flex-direction: column;
+    }
+
+    .aboutContainer {
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .aboutImage {
+        height: fit-content;
+        width: calc(100vw - 40px);
+    }
+
+    .aboutImageSmall {
+        height: fit-content;
+        width: calc(100vw - 40px);
     }
 
     /* GALLERY */
@@ -188,4 +228,34 @@ header {
     .galleryItem h2 {
         margin-bottom: 30px;
     }
+
+    .pics img {
+        width: 40vw;
+        margin-top: 2vh;
+    }
+
+    /* PROJECTS */
+    .h3p {
+        margin-top: 10px;
+    }
+
+    .videos {
+        flex-direction: column;
+    }
+
+    .video {
+        width: auto;
+    }
+
+    iframe {
+        width: calc(100vw - 40px);
+        height: calc((100vw - 40px)/1.777);
+        margin-bottom: 20px;
+    }
+
+    video {
+        width: calc(100vw - 40px);
+        height: fit-content;
+    }
+
 }
